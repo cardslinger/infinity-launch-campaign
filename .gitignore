@@ -1,0 +1,9 @@
+.pytest_cache/
+__pycache__/
+*.pyc
+launch-port.txt
+public-url.txt
+GITHUB-PUBLISH.json
+PUBLISH-LIVE.json
+publish-shots/
+.git-credentials
