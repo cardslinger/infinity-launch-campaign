@@ -1,13 +1,17 @@
 # INFINITY
 ## REALITY. YOUR WAY.
 
+*Pre-launch draft. The Kickstarter project is not live. Reward terms and delivery dates must be finalized on the project page before accepting pledges.*
+
 **Your devices. Your world. Your Infinity.**
 
 Infinity is an omniplatform AI companion built to make your digital life work as one system instead of a pile of disconnected apps, devices, accounts, automations, and settings.
 
 One account. One preference graph. One AI companion. One place where your tools, devices, software, connected environments, and workflows can finally work together.
 
-**Back Infinity on Kickstarter:** https://www.kickstarter.com/
+Infinity is planned as three connected tiers: **Infinity Zero**, a native desktop AI workspace with a local-model option; **Infinity**, the broader companion for supported apps, devices, and workflows; and **Infinity²**, the longer-term immersive world and hardware vision. They share a direction, but they are not the same product or the same delivery milestone.
+
+**Campaign preview:** https://cardslinger.github.io/infinity-launch-campaign/
 
 ---
 
@@ -55,15 +59,15 @@ Infinity is designed to gain capabilities over time without forcing users to reb
 
 Back Infinity and help build a digital environment that is connected, adaptable, user-controlled, and designed to keep evolving.
 
-**BACK INFINITY ON KICKSTARTER →**
-https://www.kickstarter.com/
+**EXPLORE THE CAMPAIGN PREVIEW →**
+https://cardslinger.github.io/infinity-launch-campaign/
 
 ---
 
 ## Recommended Reward Tiers
 
 ### $5 — Supporter
-Digital supporter badge + campaign wallpaper.
+The first digital gift: a prismatic sparkly-cursor effect for supported Windows desktop surfaces, with intensity that responds to typing speed, plus a supporter badge and campaign wallpaper. This software reward is in development; compatibility and delivery dates will be specified before the campaign goes live. It is not a promise to alter every third-party app or device.
 
 ### $15 — Founding Supporter
 Supporter rewards + name on the digital Wall of Thanks.
@@ -144,4 +148,4 @@ It is an attempt to make your digital life organize itself around you.
 
 **Reality. Your Way.**
 
-**Back Infinity on Kickstarter:** https://www.kickstarter.com/
+**Campaign preview:** https://cardslinger.github.io/infinity-launch-campaign/

@@ -25,8 +25,17 @@ def test_required_files_exist():
 def test_campaign_message():
     html = (WEB / "index.html").read_text(encoding="utf-8")
     assert "REALITY. YOUR WAY." in html
-    assert "Back Infinity on Kickstarter" in html
-    assert "kickstarter.com" in html
+    assert "Campaign preview" in html
+    assert 'href="kickstarter.html"' in html
+    assert 'href="https://www.kickstarter.com/"' not in html
+
+
+def test_public_pages_do_not_send_supporters_to_kickstarter_home():
+    for folder in (ROOT / "web", ROOT / "docs"):
+        for page in folder.glob("*.html"):
+            html = page.read_text(encoding="utf-8")
+            assert 'href="https://www.kickstarter.com/"' not in html, page
+            assert "https%3A%2F%2Fwww.kickstarter.com%2F" not in html, page
 
 
 def test_no_equity_language():
