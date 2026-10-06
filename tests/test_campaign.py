@@ -44,6 +44,7 @@ def test_public_mobile_shell_links_resolve():
     for target in ("manifest.json", "../assets/image.png", "../kickstarter.html", "../index.html"):
         assert target in html
         assert (shell.parent / target).resolve().is_file(), target
+    assert 'href="mobile/index.html"' in (ROOT / "docs" / "index.html").read_text(encoding="utf-8")
 
 
 def test_no_equity_language():
