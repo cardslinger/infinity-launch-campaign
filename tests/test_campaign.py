@@ -1,7 +1,20 @@
+from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / "web"
+
+
+class LocalReferences(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.urls = []
+
+    def handle_starttag(self, tag, attrs):
+        for name, value in attrs:
+            if name in {"href", "src"} and value:
+                self.urls.append(value)
 
 
 def test_required_files_exist():
@@ -47,6 +60,19 @@ def test_public_mobile_shell_links_resolve():
         assert target in html
         assert (shell.parent / target).resolve().is_file(), target
     assert 'href="mobile/index.html"' in (ROOT / "docs" / "index.html").read_text(encoding="utf-8")
+
+
+def test_local_site_links_and_images_exist():
+    for folder in (ROOT / "web", ROOT / "docs", ROOT / "mobile"):
+        for page in folder.rglob("*.html"):
+            parser = LocalReferences()
+            parser.feed(page.read_text(encoding="utf-8"))
+            for url in parser.urls:
+                parts = urlsplit(url)
+                if parts.scheme or parts.netloc or not parts.path:
+                    continue
+                target = page.parent / unquote(parts.path)
+                assert target.is_file(), f"{page}: missing {url}"
 
 
 def test_no_equity_language():
