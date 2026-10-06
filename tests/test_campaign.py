@@ -74,6 +74,18 @@ def test_cursor_reward_preview_is_honest_and_deployed():
         assert 'not a working system-wide cursor utility' in html
 
 
+def test_campaign_concept_images_are_labeled():
+    for folder in (ROOT / "web", ROOT / "docs"):
+        html = (folder / "index.html").read_text(encoding="utf-8")
+        assert html.count("<figcaption>") == 3
+        assert html.count("AI-generated campaign concept artwork") == 2
+        assert "not a screenshot of working software" in html
+    for page in (ROOT / "mobile" / "index.html", ROOT / "docs" / "mobile" / "index.html"):
+        html = page.read_text(encoding="utf-8")
+        assert "A planned omniplatform AI companion" in html
+        assert "Campaign concept artwork, not a screenshot of working software" in html
+
+
 def test_local_site_links_and_images_exist():
     for folder in (ROOT / "web", ROOT / "docs", ROOT / "mobile"):
         for page in folder.rglob("*.html"):
