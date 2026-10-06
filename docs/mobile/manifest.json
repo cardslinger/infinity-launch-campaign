@@ -1,0 +1,9 @@
+{
+  "name": "Infinity Launch Campaign",
+  "short_name": "Infinity",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#07080d",
+  "theme_color": "#07080d",
+  "description": "Infinity — Reality. Your Way."
+}

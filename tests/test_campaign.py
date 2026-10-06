@@ -32,10 +32,18 @@ def test_campaign_message():
 
 def test_public_pages_do_not_send_supporters_to_kickstarter_home():
     for folder in (ROOT / "web", ROOT / "docs", ROOT / "mobile"):
-        for page in folder.glob("*.html"):
+        for page in folder.rglob("*.html"):
             html = page.read_text(encoding="utf-8")
             assert 'href="https://www.kickstarter.com/"' not in html, page
             assert "https%3A%2F%2Fwww.kickstarter.com%2F" not in html, page
+
+
+def test_public_mobile_shell_links_resolve():
+    shell = ROOT / "docs" / "mobile" / "index.html"
+    html = shell.read_text(encoding="utf-8")
+    for target in ("manifest.json", "../assets/image.png", "../kickstarter.html", "../index.html"):
+        assert target in html
+        assert (shell.parent / target).resolve().is_file(), target
 
 
 def test_no_equity_language():
