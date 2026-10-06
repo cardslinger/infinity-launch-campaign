@@ -31,7 +31,7 @@ def test_campaign_message():
 
 
 def test_public_pages_do_not_send_supporters_to_kickstarter_home():
-    for folder in (ROOT / "web", ROOT / "docs"):
+    for folder in (ROOT / "web", ROOT / "docs", ROOT / "mobile"):
         for page in folder.glob("*.html"):
             html = page.read_text(encoding="utf-8")
             assert 'href="https://www.kickstarter.com/"' not in html, page
