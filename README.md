@@ -15,10 +15,12 @@ Official launch package copied from:
 - Pages: `web/index.html` · `web/kickstarter.html` · `web/press.html` · `web/social.html`
 - Mobile: `mobile/index.html`
 
-## Primary CTA
-**BACK INFINITY ON KICKSTARTER →** https://www.kickstarter.com/
+## Current public CTA
+**EXPLORE THE CAMPAIGN PREVIEW →** https://cardslinger.github.io/infinity-launch-campaign/
 
-Replace the URL in `KICKSTARTER_URL.txt` with the live campaign URL when the Kickstarter page exists, then replace it in the HTML files.
+The Kickstarter project is not live. The public site, press page, and social-share drafts point to this preview, not to Kickstarter's generic home page. The campaign covers three related tiers—Infinity Zero, Infinity, and Infinity²—with separate milestones. The proposed $5 reward is the typing-responsive sparkly-cursor effect for supported Windows surfaces, plus a badge and wallpaper; compatibility and delivery timing need to be finalized before pledges open.
+
+After the Kickstarter project is approved and live, replace the placeholder in `KICKSTARTER_URL.txt`, the campaign copy, and the site/share links with the verified project URL. Recheck every reward, cost, claim, and delivery date first.
 
 ## Package
 - `copy/` — Kickstarter-ready campaign copy
