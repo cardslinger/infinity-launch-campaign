@@ -28,6 +28,8 @@ def test_campaign_message():
     assert "Campaign preview" in html
     assert 'href="kickstarter.html"' in html
     assert 'href="https://www.kickstarter.com/"' not in html
+    assert "Prototype today. Bigger vision ahead." in html
+    assert "roadmap concepts, not shipped products" in html
 
 
 def test_public_pages_do_not_send_supporters_to_kickstarter_home():

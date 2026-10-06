@@ -27,6 +27,8 @@ The goal is simple: technology should adapt to you—not the other way around.
 
 ## What Infinity Does
 
+This section describes the product roadmap, not a list of features already shipping. Infinity Zero is the current native desktop prototype; Infinity and Infinity² are later tiers. A project submission must show the actual prototype and clearly disclose any software, hardware, or integration not yet developed.
+
 ### One Account. Everything Syncs.
 Your preferences and supported settings travel with you.
 
@@ -137,6 +139,8 @@ A broader connected-device and environment program.
 Infinity is ambitious because it crosses operating systems, devices, services, AI providers, permissions, privacy boundaries, and hardware capabilities. Some integrations will depend on third-party APIs, operating-system restrictions, hardware support, account permissions, and platform policies.
 
 The campaign will publish clear milestones, distinguish prototypes from shipped functionality, disclose meaningful changes, and avoid treating conceptual hardware as guaranteed finished production hardware until engineering and manufacturing milestones support that claim.
+
+AI is used in the product and in preparing parts of this campaign. The final project page must identify what people designed, built, and verified, and distinguish generated concept art from screenshots of working software. The proposed rewards require prototype evidence, compatibility testing, fulfillment costs, and delivery dates before pledges open.
 
 ---
 
