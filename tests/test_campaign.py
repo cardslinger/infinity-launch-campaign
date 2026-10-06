@@ -62,6 +62,18 @@ def test_public_mobile_shell_links_resolve():
     assert 'href="mobile/index.html"' in (ROOT / "docs" / "index.html").read_text(encoding="utf-8")
 
 
+def test_cursor_reward_preview_is_honest_and_deployed():
+    for folder in (ROOT / "web", ROOT / "docs"):
+        page = folder / "cursor-preview.html"
+        html = page.read_text(encoding="utf-8")
+        index = (folder / "index.html").read_text(encoding="utf-8")
+        assert 'href="cursor-preview.html"' in index
+        assert 'id="sample"' in html
+        assert 'id="particles"' in html
+        assert 'prefers-reduced-motion' in html
+        assert 'not a working system-wide cursor utility' in html
+
+
 def test_local_site_links_and_images_exist():
     for folder in (ROOT / "web", ROOT / "docs", ROOT / "mobile"):
         for page in folder.rglob("*.html"):
