@@ -86,6 +86,15 @@ def test_campaign_concept_images_are_labeled():
         assert "Campaign concept artwork, not a screenshot of working software" in html
 
 
+def test_social_drafts_distinguish_prototype_from_roadmap():
+    for page in (ROOT / "social" / "Launch-Posts.md", ROOT / "web" / "social.html", ROOT / "docs" / "social.html"):
+        text = page.read_text(encoding="utf-8")
+        assert "Infinity Zero is the current desktop prototype" in text
+        assert "We built Infinity" not in text
+        assert "We’re launching Infinity" not in text
+        assert "not a list of features already shipping" in text
+
+
 def test_local_site_links_and_images_exist():
     for folder in (ROOT / "web", ROOT / "docs", ROOT / "mobile"):
         for page in folder.rglob("*.html"):
