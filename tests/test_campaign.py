@@ -95,6 +95,14 @@ def test_social_drafts_distinguish_prototype_from_roadmap():
         assert "not a list of features already shipping" in text
 
 
+def test_press_preview_states_current_verification_limits():
+    for page in (ROOT / "press" / "Press-Release.md", ROOT / "web" / "press.html", ROOT / "docs" / "press.html"):
+        text = page.read_text(encoding="utf-8")
+        assert "Earlier installed builds completed limited live" in text
+        assert "current desktop chat experience still needs end-to-end verification" in text
+        assert "roadmap concepts, not shipping products" in text
+
+
 def test_local_site_links_and_images_exist():
     for folder in (ROOT / "web", ROOT / "docs", ROOT / "mobile"):
         for page in folder.rglob("*.html"):

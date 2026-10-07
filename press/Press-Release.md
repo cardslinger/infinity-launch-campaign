@@ -8,11 +8,13 @@ Built around the idea **“Reality. Your Way.”**, Infinity aims to reduce the 
 
 The campaign presents Infinity as more than a single application: a platform intended to evolve across software, mobile, desktop, connected devices, smart environments, and future hardware.
 
+The current prototype is Infinity Zero, a native desktop AI workspace. Earlier installed builds completed limited live local-model and Grok gateway chat tests; the current desktop chat experience still needs end-to-end verification. The broader Infinity companion and Infinity² immersive/hardware tier are roadmap concepts, not shipping products. The campaign will show working demonstrations and separate verified functions from planned integrations.
+
 The Kickstarter project is not live yet. Explore the campaign preview:
 https://cardslinger.github.io/infinity-launch-campaign/
 
 ### About Infinity
-Infinity is an omniplatform AI companion and digital ecosystem built around one portable preference graph, cross-device continuity, extensible integrations, automation, privacy controls, and user-directed behavior.
+Infinity is a planned omniplatform AI companion and digital ecosystem. Its roadmap includes a portable preference graph, cross-device continuity, extensible integrations, automation, privacy controls, and user-directed behavior.
 
 ### Media Contact
 Infinity
