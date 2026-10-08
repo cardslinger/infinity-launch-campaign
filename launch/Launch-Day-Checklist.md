@@ -1,5 +1,12 @@
 # Infinity Launch-Day Checklist
 
+## Current gate (checked 2026-10-08)
+
+- Infinity Zero is the current native desktop prototype. Its installed C# gateway completed a local Dolphin chat request; the on-screen composer and cross-app features still require demonstration and verification before being described as working.
+- Infinity and Infinity² are roadmap tiers. Hardware, medical, and satellite concepts must not be presented as shipping rewards without engineering, cost, regulatory, and fulfillment evidence.
+- The campaign preview site and press preview are public. A Kickstarter project, social launch posts, and paid ads are **not** verified live. No ad spending is authorized by this checklist.
+- Before pledge collection: complete creator identity and payment onboarding, approve final campaign assets, cost every reward, set realistic delivery dates, and supply a live Kickstarter project URL. Do not substitute the Kickstarter homepage for a project link.
+
 ## Kickstarter rules review (checked 2026-10-06)
 
 Official rules: https://www.kickstarter.com/rules

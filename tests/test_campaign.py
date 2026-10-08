@@ -103,6 +103,13 @@ def test_press_preview_states_current_verification_limits():
         assert "roadmap concepts, not shipping products" in text
 
 
+def test_launch_checklist_keeps_publication_gates_explicit():
+    text = (ROOT / "launch" / "Launch-Day-Checklist.md").read_text(encoding="utf-8")
+    assert "on-screen composer and cross-app features still require demonstration" in text
+    assert "Kickstarter project, social launch posts, and paid ads are **not** verified live" in text
+    assert "cost every reward" in text
+
+
 def test_local_site_links_and_images_exist():
     for folder in (ROOT / "web", ROOT / "docs", ROOT / "mobile"):
         for page in folder.rglob("*.html"):
