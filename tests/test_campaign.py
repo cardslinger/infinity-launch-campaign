@@ -110,6 +110,14 @@ def test_launch_checklist_keeps_publication_gates_explicit():
     assert "cost every reward" in text
 
 
+def test_publish_log_distinguishes_previews_from_live_launch():
+    text = (ROOT / "PUBLISH-LOG.md").read_text(encoding="utf-8")
+    assert "public campaign preview is deployed" in text
+    assert "Kickstarter project is **not verified live**" in text
+    assert "Opening a compose window is not a post" in text
+    assert "custom-domain deployment is **not verified**" in text
+
+
 def test_local_site_links_and_images_exist():
     for folder in (ROOT / "web", ROOT / "docs", ROOT / "mobile"):
         for page in folder.rglob("*.html"):
