@@ -98,8 +98,8 @@ def test_social_drafts_distinguish_prototype_from_roadmap():
 def test_press_preview_states_current_verification_limits():
     for page in (ROOT / "press" / "Press-Release.md", ROOT / "web" / "press.html", ROOT / "docs" / "press.html"):
         text = page.read_text(encoding="utf-8")
-        assert "Earlier installed builds completed limited live" in text
-        assert "current desktop chat experience still needs end-to-end verification" in text
+        assert "current installed build completed a live local-model gateway chat test" in text
+        assert "on-screen WebView composer and broader integrations still need end-to-end verification" in text
         assert "roadmap concepts, not shipping products" in text
 
 
