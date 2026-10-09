@@ -138,6 +138,8 @@ A broader connected-device and environment program.
 
 Infinity is ambitious because it crosses operating systems, devices, services, AI providers, permissions, privacy boundaries, and hardware capabilities. Some integrations will depend on third-party APIs, operating-system restrictions, hardware support, account permissions, and platform policies.
 
+Infinity Zero currently uses the locally runnable Dolphin 3.0 model, a Llama 3.1 derivative under the [Llama 3.1 Community License](https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE). It is open-weight, not an unrestricted open-source model. The application adds no content filter to its local replies, but model behavior cannot be guaranteed to be refusal-free. Any model redistribution or commercial offering requires a license review.
+
 The campaign will publish clear milestones, distinguish prototypes from shipped functionality, disclose meaningful changes, and avoid treating conceptual hardware as guaranteed finished production hardware until engineering and manufacturing milestones support that claim.
 
 AI is used in the product and in preparing parts of this campaign. The final project page must identify what people designed, built, and verified, and distinguish generated concept art from screenshots of working software. The proposed rewards require prototype evidence, compatibility testing, fulfillment costs, and delivery dates before pledges open.

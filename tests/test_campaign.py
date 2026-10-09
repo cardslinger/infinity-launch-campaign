@@ -120,6 +120,14 @@ def test_publish_log_distinguishes_previews_from_live_launch():
     assert "custom-domain deployment is **not verified**" in text
 
 
+def test_local_model_license_is_described_without_unrestricted_claims():
+    for page in (ROOT / "copy" / "Kickstarter-Campaign-Copy.md", WEB / "kickstarter.html", ROOT / "docs" / "kickstarter.html"):
+        text = page.read_text(encoding="utf-8")
+        assert "Llama 3.1 Community License" in text
+        assert "open-weight, not an unrestricted open-source model" in text
+        assert "behavior cannot be guaranteed" in text
+
+
 def test_local_site_links_and_images_exist():
     for folder in (ROOT / "web", ROOT / "docs", ROOT / "mobile"):
         for page in folder.rglob("*.html"):
