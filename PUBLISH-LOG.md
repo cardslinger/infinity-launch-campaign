@@ -8,6 +8,8 @@
 - Paid ads are **not verified running**. No ad spend is recorded by this project.
 - A custom-domain deployment is **not verified**. Do not present the old local tunnel or DNS notes below as current public endpoints.
 
+2026-10-08 follow-up: `infinity-squared.com` currently resolves to `68.66.224.35`, but both HTTP and HTTPS return 403 Forbidden. DNS pointing at a server is not a published Infinity campaign, and the intended relationship between this domain and the separate Infinity² tier should be confirmed before changing the site.
+
 The August notes below are historical attempts, not a current list of live publications.
 
 Posted 2026-08-13 from the official campaign folder.
