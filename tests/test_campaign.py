@@ -43,6 +43,8 @@ def test_campaign_message():
     assert 'href="https://www.kickstarter.com/"' not in html
     assert "Prototype today. Bigger vision ahead." in html
     assert "roadmap concepts, not shipped products" in html
+    assert "current installed gateway completed a live local-model chat test" in html
+    assert "planned direction, not features verified in Infinity Zero today" in html
 
 
 def test_public_pages_do_not_send_supporters_to_kickstarter_home():
